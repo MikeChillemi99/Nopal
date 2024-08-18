@@ -104,7 +104,7 @@ nav {
     margin-top: 2rem;
 }
 
-/*bg svg style*/
+/*bg svg style and animation*/
 .cactus1 {
     position: absolute;
     bottom: 90px;
@@ -112,7 +112,18 @@ nav {
     z-index: -1;
     opacity: 0.5;
     transform: rotate(5deg);
-    height: 80%;"
+    height: 80%;
+    transform-origin: center;
+    animation: swayCactus 6s infinite ease-in-out;
+}
+
+@keyframes swayCactus {
+    0%, 100% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50% {
+        transform: rotate(2.5deg) translateY(-2.5px);
+    }
 }
 
 .cactus2 {
@@ -122,7 +133,18 @@ nav {
     z-index: -1;
     opacity: 0.7;
     transform: rotate(10deg);
-    height: 80%;"
+    height: 80%;
+    transform-origin: center;
+    animation: swayCactus 4s infinite ease-in-out;
+}
+
+@keyframes swayCactus2 {
+    0%, 100% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50% {
+        transform: rotate(2.5deg) translateY(-2.5px);
+    }
 }
 
 .leaf1 {
@@ -132,7 +154,30 @@ nav {
     z-index: -1;
     opacity: 0.9;
     transform: rotate(-40deg);
-    height: 50%;"
+    height: 50%;
+    animation: fallLeaf 3s ease-in-out forwards, swayLeaf 4s infinite ease-in-out;
+}
+
+@keyframes fallLeaf {
+    0% {
+        top: -100px;
+        right: -50px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 200px;
+        right: calc(100% - 550px);
+        transform: rotate(-40deg);
+    }
+}
+
+@keyframes swayLeaf {
+    0%, 100% {
+        transform: rotate(0deg) translateX(0);
+    }
+    50% {
+        transform: rotate(-10deg) translateX(-10px);
+    }
 }
 
 .leaf2 {
@@ -140,7 +185,8 @@ nav {
     bottom: 130px;
     right: 550px;
     z-index: -1;
-    height: 50%;"
+    height: 50%;
+    animation: swayLeaf 7s infinite ease-in-out;
 }
 
 
