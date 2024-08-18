@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=New+Amsterdam&family=Playwrite+IT+Moderna&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    background-color: #57CC99;
+    overflow: hidden;
+    letter-spacing: 0.125rem;
+}
+
+/*header*/
+.header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: #C7F9CC;
+}
+
+.nav-button {
+    flex: 1;
+    text-align: right; 
+    font-size: 2rem;
+}
+
+.nav-button > a {
+    color: black;
+    text-decoration: none; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.nav-button:hover > a {
+    color: black;
+    text-decoration: none; 
+    background-color: #C7F9CC;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+/*content*/
+
+/*footer*/
+.footer {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+/*bg svg style*/
+.cactus1 {
+    position: absolute;
+    bottom: 90px;
+    left: -110px;
+    z-index: -1;
+    opacity: 0.5;
+    transform: rotate(5deg);
+    height: 80%;"
+}
+
+.cactus2 {
+    position: absolute;
+    bottom: 110px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.7;
+    transform: rotate(10deg);
+    height: 80%;"
+}
+
+.leaf1 {
+    position: absolute;
+    bottom: 300px;
+    left: 550px;
+    z-index: -1;
+    opacity: 0.9;
+    transform: rotate(-40deg);
+    height: 50%;"
+}
+
+.leaf2 {
+    position: absolute;
+    bottom: 130px;
+    right: 550px;
+    z-index: -1;
+    height: 50%;"
+}
+
+
+
+
